@@ -1,0 +1,43 @@
+body{
+font-family: 'Open Sans', sans-serif;
+}
+
+@media(max-width:768px){
+    .card .img-wrap{
+        border-bottom: 1px solid #dee2e6;
+    }
+}
+
+/* CSS'leri Bootstrap kütüphanesi olan "card" altına yazaarak da verebiliriz fakat başka bir kısımda "card" sınıfını kullandığımızda karışıklığa yol açar. Bundan dolayı "product-card" isimli yeni bir sınıfı kendimiz oluşturup CSS'leri onun altına yazdık. */
+
+.product-card .img-wrap{
+    height: 250px;
+    padding: .5rem;
+    display: block; /* Resmi yerleştirip paddingi aktif ettik. */
+    text-align: center; /* İçeride resmi ortaladık. */
+}
+
+.product-card img{
+    height: 100%;
+    width: auto;
+    max-width: 100%; /* Resim container'ın yüksekliğini geçmesin. */
+    object-fit: cover; 
+}
+
+.product-card .checked{
+    color: orange; /* Yıldızları turuncu yaptık.*/
+}
+
+.product-card .title{
+    text-decoration: none;
+    color: #212529;
+}
+
+.product-card .price{
+    color: orange;
+    font-size: 22px;
+}
+
+.product-card .rating{
+    font-size: 13px;
+}
